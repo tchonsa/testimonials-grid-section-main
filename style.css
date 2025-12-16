@@ -3,7 +3,7 @@
   font-family: 'Barlow Semi Condensed';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/barlow-semi-condensed-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('fonts/barlow-semi-condensed-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-family: 'Barlow Semi Condensed';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/barlow-semi-condensed-v16-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('fonts/barlow-semi-condensed-v16-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
@@ -19,7 +19,7 @@
     font-family: 'Barlow Semi Condensed';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/barlow-semi-condensed-v16-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('fonts/barlow-semi-condensed-v16-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 body {
     background-color: hsl(260, 100%, 95%);
@@ -154,6 +154,22 @@ h3 {
 .attribution a:hover {
   text-decoration: underline;
 }
+
+.comment {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.comment.active {
+    z-index: 10;
+    transform: scale(1.3);
+}
+
+.comment.blurred {
+    filter: blur(3px);
+    opacity: 0.4;
+}
+
 
 @media (max-width: 600px) {
     body {
